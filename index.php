@@ -79,7 +79,7 @@
         $host = "std-mysql.ist.mospolytech.ru";
         $username = "std_1871_channelcreator";
         $password = "12345678";
-        $database = "channelcreator"; // Change to your database name
+        $database = "std_1871_channelcreator"; // Change to your database name
 
         // Create a database connection
         $conn = new mysqli($host, $username, $password, $database);
