@@ -104,13 +104,13 @@
               $isFavorite = checkIfChannelIsFavorite($conn, $userId, $row["id"]); // Pass $conn, $userId, and channel ID
       
               if ($isFavorite) {
-                  echo '<a href="remove_from_favorites.php?channel_id=' . $row["id"] . '" class="btn btn-danger">Remove from Favorites</a>';
+                  echo '<a href="remove_from_favorites.php?channel_id=' . $row["id"] . '" class="btn btn-danger">Удалить из избранных</a>';
               } else {
-                  echo '<a href="add_to_favorites.php?channel_id=' . $row["id"] . '" class="btn btn-primary">Add to Favorites</a>';
+                  echo '<a href="add_to_favorites.php?channel_id=' . $row["id"] . '" class="btn btn-primary">Добавить в избранное</a>';
               }
               
-              echo "<a href='edit_channel.php?id=" . $row["id"] . "' class='btn btn-outline-blue btn-sm mr-2'><i class='bi bi-pencil'></i> Редактировать</a>";
-              echo "<a href='delete_confirmation.php?id=" . $row["id"] . "' class='btn btn-outline-red btn-sm'><i class='bi bi-trash'></i> Удалить</a>";
+              echo "<a href='edit_channel.php?id=" . $row["id"] . "' class='btn btn-primary mr-2'><i class='bi bi-pencil'></i> Редактировать</a>";
+              echo "<a href='delete_confirmation.php?id=" . $row["id"] . "' class='btn btn-danger btn-sm'><i class='bi bi-trash'></i> Удалить</a>";
               echo "</td>";
               echo "</tr>";
           }
