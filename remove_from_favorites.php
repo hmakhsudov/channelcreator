@@ -13,7 +13,7 @@ if (!isset($_SESSION['user_id'])) {
 }
 
 // Database connection parameters
-$host = "std-mysql";
+$host = "std-mysql.ist.mospolytech.ru";
 $username = "std_1871_channelcreator";
 $password = "12345678";
 $database = "channelcreator"; // Change to your database name
