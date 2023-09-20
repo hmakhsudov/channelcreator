@@ -16,9 +16,9 @@ if (!isset($_SESSION['user_id'])) {
 }
 
 // Database connection parameters
-$host = "localhost";
-$username = "root";
-$password = "root";
+$host = "std-mysql";
+$username = "std_1871_channelcreator"871_channelcreator";
+$password = "12345678"678";
 $database = "channelcreator"; // Change to your database name
 
 // Create a database connection

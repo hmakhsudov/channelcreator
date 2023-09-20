@@ -2,9 +2,9 @@
 session_start(); // Start or resume the session
 
 // Database connection parameters
-$host = "localhost";
-$username = "root";
-$password = "root";
+$host = "std-mysql";
+$username = "std_1871_channelcreator";
+$password = "12345678";
 $database = "channelcreator"; // Change to your database name
 
 // Create a database connection
