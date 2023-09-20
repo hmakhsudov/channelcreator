@@ -23,7 +23,7 @@ $password = $_POST['password']; // Get the password without hashing
 
 // Validate password length
 if (strlen($password) < 8) {
-    echo "Error: Password must be at least 8 characters long.";
+    echo "Ошибка: Пароль должен быть минимум 8 символов.";
 } else {
     // Hash the password for security
     $hashedPassword = password_hash($password, PASSWORD_BCRYPT);
@@ -35,9 +35,9 @@ if (strlen($password) < 8) {
     $stmt->bind_param("sss", $name, $email, $hashedPassword);
 
     if ($stmt->execute()) {
-        echo "Registration successful! You can now <a href='login.html'>login</a>.";
+        echo "Регистрация прошла успешно! Вы теперь можете <a href='login.html'>войти</a>.";
     } else {
-        echo "Error: " . $stmt->error;
+        echo "Ошибка: " . $stmt->error;
     }
 
     $stmt->close();

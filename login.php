@@ -38,10 +38,10 @@ if ($result->num_rows == 1) {
         header("Location: index.php");
         exit; 
     } else {
-        echo "Login failed. Please check your email and password.";
+        echo "Не получилось авторизоваться. Проверьте вашу почту и пароль еще раз";
     }
 } else {
-    echo "Login failed. Please check your email and password.";
+    echo "Не получилось авторизоваться. Проверьте вашу почту и пароль еще раз.";
 }
 
 $stmt->close();
