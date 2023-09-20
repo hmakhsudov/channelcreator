@@ -36,9 +36,10 @@
                 if (isset($_SESSION['user_id'])) {
                   $userId = $_SESSION['user_id'];
                 } else {
-                  // Handle the case where the user is not logged in
-                  // You may redirect them to the login page or take other appropriate actions
+                  header("Location: login.php");
+                  exit(); // Make sure to stop script execution after redirection
                 }
+               
 
                 // Function to check if a channel is in a user's favorites
                 // Include the functions.php file
@@ -127,14 +128,3 @@
     </div>
 </body>
 </html>
-<?php
-// Start the session to access session variables
-session_start();
-
-// Check if the user is not logged in (you may have a different condition)
-if (!isset($_SESSION['user_id'])) {
-    // Redirect to the login page
-    header("Location: login.php");
-    exit(); // Make sure to stop script execution after redirection
-}
-?>
