@@ -109,7 +109,7 @@
                   echo '<a href="add_to_favorites.php?channel_id=' . $row["id"] . '" class="btn btn-primary">Добавить в избранное</a>';
               }
               
-              echo "<a href='edit_channel.php?id=" . $row["id"] . "' class='btn btn-primary mr-2'><i class='bi bi-pencil'></i> Редактировать</a>";
+              echo "<a href='edit_channel.php?id=" . $row["id"] . "' class='btn  mr-2'><i class='bi bi-pencil'></i> Редактировать</a>";
               echo "<a href='delete_confirmation.php?id=" . $row["id"] . "' class='btn btn-danger btn-sm'><i class='bi bi-trash'></i> Удалить</a>";
               echo "</td>";
               echo "</tr>";
