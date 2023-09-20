@@ -36,7 +36,7 @@
                 if (isset($_SESSION['user_id'])) {
                   $userId = $_SESSION['user_id'];
                 } else {
-                  header("Location: login.php");
+                  header("Location: login.html");
                   exit(); // Make sure to stop script execution after redirection
                 }
                
